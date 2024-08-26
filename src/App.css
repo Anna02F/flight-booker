@@ -1,38 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+/* FORM */
+
+.flight-booker-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 30%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flight-select {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+}
+.flight-select option {
+  background: yellow;
+  color: red;
+}
+
+.date-input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* BUTTON */
+
+.submit-btn {
+  padding: 0.5rem 1.5rem;
+  background: #6bab11;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #7ac215;
+  transform: scale(1.03);
 }
